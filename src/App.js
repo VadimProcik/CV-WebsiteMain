@@ -49,6 +49,7 @@ function App() {
           <p>DevNest is a Programming Learning Hybrid Application & Website designed to assist users in reaching their programming goals. Choose your course and start learning. A short ad of the application is available at <a href="https://www.youtube.com/watch?v=3fDNKw592cw">https://www.youtube.com/watch?v=3fDNKw592cw</a></p>
           <p>Create your account and begin progressing through a course of your choice gaining knowledge along the way. If you run into a problem, you can text friends and other app users for help through the in-app chat feature. To ensure users are learning, they will not be able to move on to the next level of their chosen course until they gain enough XP, which is earned by performing well in levels. All user progression is saved in a Firebase database. If the user encounters issues with the application, they can contact the dev team via a form on the website.</p>
           <img src="DevNestcover.png" className="project-image" alt="DevNest cover" />
+          <p><strong>Github Link: <a href="https://github.com/VadimProcik/DevNest">CLICK ME</a></strong></p>
         </div>
 
         {/* Project 2 */}
@@ -67,6 +68,7 @@ function App() {
             Key features include the use of OpenCV for image manipulation, NumPy for efficient array handling, and the `skimage` library for component analysis. The project processes each image through multiple stages of binary morphology to enhance the structure of the O-rings before checking to see their circular properties. The final classification is based on the circularity metric, with perfectly circular O-rings classified as "Pass" and others as "Fail."
           </p>
           <img src='OtsusThresholding.png' className="project-image" alt="Project 2" />
+          <p><strong>Github Link: <a href="https://github.com/VadimProcik/PythonPassorFail">CLICK ME</a></strong></p>
         </div>
 
         {/* Project 3 */}
