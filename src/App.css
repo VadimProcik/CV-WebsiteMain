@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
@@ -21,7 +22,17 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  color: rgb(255, 234, 0);
+}
+.App-footer{
+  background-color: #282c34;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-link {
@@ -35,4 +46,103 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  font-size: 5.5em;
+}
+
+.bio {
+  margin: 10px 0;
+  font-size: 0.8em;
+  color: white;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.icons{
+  font-size: 1.5em;
+  margin: 25px 25px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+a:hover {
+  background-color: #f1f1f1;
+  color: #0056b3;
+}
+
+a:focus {
+  background-color: #d1e7fd;
+  outline: none; 
+  box-shadow: 0 0 3px 2px #007bff; 
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 9rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077b5; 
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.react-logo {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1rem;
+  color: #61dafb; 
+  display: flex;
+  align-items: center;
+}
+
+.react-logo span {
+  margin-left: 5px;
+  font-size: 4rem;
 }
