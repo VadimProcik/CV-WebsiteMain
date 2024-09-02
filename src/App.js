@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import { FaReact, FaLinkedin, FaGithub } from 'react-icons/fa'; // React icon
-import { SiFirebase, SiExpo, SiPython } from 'react-icons/si';
+import { FaReact, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { SiFirebase, SiExpo, SiPython,SiUnity, SiCsharp } from 'react-icons/si';
 import './App.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         {/* React Logo in Top Right */}
         <div className="react-logo">
-          <p>This website is made with React</p>
+          <p style={{ color: 'white' }}>This website is made with React</p>
           <span>
             <FaReact />
           </span>
@@ -27,7 +27,7 @@ function App() {
           </a>
         </div>
 
-        <p><strong>Contact Details:&nbsp; provadims19@gmail.com,  &nbsp;&nbsp;&nbsp;&nbsp; 0897075667</strong></p>
+        <p style={{ color: 'white' }}><strong>Contact Details:&nbsp; provadims19@gmail.com,  &nbsp;&nbsp;&nbsp;&nbsp; 0897075667</strong></p>
         <h1>Vadim Procik Web CV</h1>
         <p className="bio">
           <strong>Quick Summary:</strong> I graduated with a first-class honours degree (3.3 GPA) from my Bachelor's in Computer Science at TU Dublin - Blanchardstown in Summer 2024. In the summer of 2022, I worked as a software engineer intern at BeSpace in Blanchardstown where they taught me how to use their software called Cabinet Vision where I would make 3D renders of customers' orders and send cut-out sheets to CNC machines. If anything went wrong with the machines, I and the senior engineer would examine and fix them. Since graduation, I have been reaching out to local small businesses offering to build websites for them to further develop my experience and portfolio.
@@ -67,14 +67,21 @@ function App() {
           <p>
             Key features include the use of OpenCV for image manipulation, NumPy for efficient array handling, and the `skimage` library for component analysis. The project processes each image through multiple stages of binary morphology to enhance the structure of the O-rings before checking to see their circular properties. The final classification is based on the circularity metric, with perfectly circular O-rings classified as "Pass" and others as "Fail."
           </p>
+          <br></br>
           <img src='OtsusThresholding.png' className="project-image" alt="Project 2" />
           <p><strong>Github Link: <a href="https://github.com/VadimProcik/PythonPassorFail">CLICK ME</a></strong></p>
         </div>
 
         {/* Project 3 */}
         <div className="project">
-          <h2>Project 3: React Portfolio</h2>
-          <p>This project showcases a personal portfolio built using React and modern web development techniques.</p>
+          <h2>
+            Project 3: A Unity Game is COMING
+            <span className="icons">
+              <SiUnity /> <SiCsharp/>
+            </span>  
+          </h2>
+          <h3>Unity Game: C#</h3>
+          <p>For my next personal project I would like to take on the challenge of creating my first fully functional unity game with good game loop using C#.</p>
           <img src={logo} className="project-image" alt="Project 3" />
         </div>
 
@@ -85,8 +92,9 @@ function App() {
           <img src={logo} className="project-image" alt="Project 4" />
         </div>
       </div>
-      <footer className="App-footer">
 
+      <footer className="App-footer">
+        <h3 style={{ color: 'white' }}>Hello please hire me...lol</h3>
       </footer>
     </div>
   );
