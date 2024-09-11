@@ -81,8 +81,9 @@ function App() {
             </span>  
           </h2>
           <h3>Unity Game: C#</h3>
-          <p>For my next personal project I would like to take on the challenge of creating my first fully functional unity game with good game loop using C#.</p>
-          <img src={logo} className="project-image" alt="Project 3" />
+          <p>This is a work in progress project. For this personal project I would like to take on the challenge of creating my first fully functional unity game with good game loop using C#.</p>
+          <img src='UnityQuestGame.png' className="project-image" alt="Project 3" />
+          <p><strong>Github Link: <a href="https://github.com/VadimProcik/2DFunGame">CLICK ME</a></strong></p>
         </div>
 
         {/* Project 4 */}
