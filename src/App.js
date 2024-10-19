@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       {/* Header Section */}
       <header className="App-header">
-        {/* React Logo in Top Right */}
         <div className="react-logo">
           <p style={{ color: 'white' }}>This website is made with React</p>
           <span>
