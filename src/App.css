@@ -26,7 +26,8 @@
   padding: 10px;
   color: rgb(219, 203, 26);
 }
-.App-footer{
+
+.App-footer {
   background-color: rgb(37, 49, 49);
   min-height: 50vh;
   display: flex;
@@ -79,7 +80,7 @@ h1 {
   margin-bottom: 5px;
 }
 
-.icons{
+.icons {
   font-size: 1.5em;
   margin: 25px 25px;
 }
@@ -108,8 +109,8 @@ a:hover {
 
 a:focus {
   background-color: #d1e7fd;
-  outline: none; 
-  box-shadow: 0 0 3px 2px #007bff; 
+  outline: none;
+  box-shadow: 0 0 3px 2px #007bff;
 }
 
 .social-links {
@@ -126,7 +127,7 @@ a:focus {
 }
 
 .social-links a:hover {
-  color: #0077b5; 
+  color: #0077b5;
 }
 
 .icon {
@@ -138,7 +139,7 @@ a:focus {
   top: 10px;
   right: 20px;
   font-size: 1rem;
-  color: #61dafb; 
+  color: #61dafb;
   display: flex;
   align-items: center;
 }
@@ -146,4 +147,41 @@ a:focus {
 .react-logo span {
   margin-left: 5px;
   font-size: 4rem;
+}
+
+/* Responsive design for mobile */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .bio {
+    font-size: 1em;
+  }
+
+  .projects {
+    grid-template-columns: 1fr; /* Stack projects vertically */
+    padding: 10px;
+  }
+
+  .App-header, .App-footer {
+    padding: 10px;
+  }
+
+  .project {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .icons {
+    font-size: 1em;
+  }
+
+  .social-links a {
+    font-size: 2rem; /* Adjust social icon size */
+  }
+
+  .App-logo {
+    height: 20vmin; /* Adjust logo size */
+  }
 }
