@@ -164,7 +164,7 @@ a:focus {
   }
 
   .projects {
-    grid-template-columns: 1fr; /* Stack projects vertically */
+    grid-template-columns: 1fr; 
     padding: 10px;
   }
 

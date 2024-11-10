@@ -10,7 +10,7 @@ function App() {
       {/* Header Section */}
       <header className="App-header">
         <div className="react-logo">
-          <p style={{ color: 'white' }}>This website is made with React</p>
+          <p style={{ color: 'white' }}>This portfolio is made with React</p>
           <span>
             <FaReact />
           </span>
