@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   padding: 20px;
-  background-color: black;
 }
 
 .App-logo {
@@ -16,7 +15,7 @@
 }
 
 .App-header {
-  background-color: rgb(37, 49, 49);
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,11 +23,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   padding: 10px;
-  color: rgb(219, 203, 26);
+  color: rgb(255, 234, 0);
 }
 
 .App-footer {
-  background-color: rgb(37, 49, 49);
+  background-color: #282c34;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -42,12 +41,8 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 h1 {
@@ -95,6 +90,10 @@ p {
   color: #666;
 }
 
+.PFoot{
+  color: #007bff;
+}
+
 a {
   color: #007bff;
   text-decoration: none;
@@ -130,9 +129,7 @@ a:focus {
   color: #0077b5;
 }
 
-.icon {
-  vertical-align: middle;
-}
+.icon { vertical-align: middle; }
 
 .react-logo {
   position: absolute;
@@ -149,43 +146,133 @@ a:focus {
   font-size: 4rem;
 }
 
-/* Responsive design for mobile */
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 3em;
-  }
-
-  .react-logo {
-    display: none;
-  }
-
-  .bio {
-    font-size: 1em;
-  }
-
-  .projects {
-    grid-template-columns: 1fr; 
-    padding: 10px;
-  }
-
-  .App-header, .App-footer {
-    padding: 10px;
-  }
-
-  .project {
-    padding: 10px;
-    font-size: 0.9em;
-  }
-
-  .icons {
-    font-size: 1em;
-  }
-
-  .social-links a {
-    font-size: 2rem; /* Adjust social icon size */
-  }
-
-  .App-logo {
-    height: 20vmin; /* Adjust logo size */
-  }
+/* Experience & Education Sections */
+.experience,
+.education {
+  padding: 2rem;
+  background: #f9f9f9;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 95%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Horizontal Timeline */
+.timeline-horizontal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 2rem;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.timeline-card {
+  position: relative;
+  background: #fff;
+  color: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+  outline: none;
+}
+
+.timeline-card:hover,
+.timeline-card:focus {
+  transform: translateY(-5px);
+  background: #61dafb; /* React blue highlight */
+  color: #282c34;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.timeline-card:focus-visible {
+  box-shadow: 0 0 0 3px rgba(97,218,251,0.6);
+}
+
+.timeline-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+}
+
+.timeline-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.timeline-card p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ---- Modal Popup ---- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 999;
+}
+
+.modal {
+  background: #282c34;
+  color: #fff;
+  width: min(90vw, 720px);
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  padding: 1.5rem;
+  position: relative;
+}
+
+.modal h3 {
+  margin-top: 0;
+  color: #61dafb;
+}
+
+.modal .meta {
+  color: rgb(255, 234, 0);
+  margin-bottom: 0.75rem;
+}
+
+.modal-body {
+  margin-top: 0.5rem;
+  overflow-y: auto;
+  max-height: 62vh;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #61dafb;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close:focus-visible {
+  outline: 2px solid #61dafb;
+  border-radius: 6px;
+}
+
+/* (Legacy) Tooltip style disabled now that we use modal */
+.timeline-tooltip { display: none !important; }

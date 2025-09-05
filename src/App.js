@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import { FaReact, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { SiFirebase, SiExpo, SiPython,SiUnity, SiCsharp } from 'react-icons/si';
+import { SiFirebase, SiExpo, SiPython, SiUnity, SiCsharp } from 'react-icons/si';
 import './App.css';
 
 function App() {
+  // ---- Modal state ----
+  const [modalContent, setModalContent] = useState(null);
+
+  const openModal = (content) => {
+    setModalContent(content);
+  };
+
+  const closeModal = () => {
+    setModalContent(null);
+  };
+
   return (
     <div className="App">
       {/* Header Section */}
@@ -18,24 +29,216 @@ function App() {
 
         {/* Social Icons */}
         <div className="social-links">
-          <a href="https://www.linkedin.com/in/vadims-prociks-000441239/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/vadims-prociks-000441239/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin className="icon" />
           </a>
-          <a href="https://github.com/VadimProcik" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/VadimProcik"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub className="icon" />
           </a>
         </div>
 
-        <p style={{ color: 'white' }}><strong>Contact Details:&nbsp; provadims19@gmail.com,  &nbsp;&nbsp;&nbsp;&nbsp; 0897075667</strong></p>
+        <p style={{ color: 'white' }}>
+          <strong>
+            Contact Details:&nbsp; provadims19@gmail.com, &nbsp;&nbsp;&nbsp;&nbsp; 0897075667
+          </strong>
+        </p>
         <h1>Vadim Procik Web CV</h1>
         <p className="bio">
           <strong>Quick Summary:</strong> I graduated with a first-class honours degree (3.3 GPA) from my Bachelor's in Computer Science at TU Dublin - Blanchardstown in Summer 2024. In the summer of 2022, I worked as a software engineer intern at BeSpace in Blanchardstown where they taught me how to use their software called Cabinet Vision where I would make 3D renders of customers' orders and send cut-out sheets to CNC machines. If anything went wrong with the machines, I and the senior engineer would examine and fix them. Since graduation, I have been reaching out to local small businesses offering to build websites for them to further develop my experience and portfolio.
-        </p><br></br>
-        
+        </p>
+        <br />
       </header>
 
-      {/* Projects Section */}
-      <div className="projects">
+      {/* Experience Section */}
+      <div className="experience">
+        <h2>Experience</h2> <h5>Click the card for details</h5>
+        <div className="timeline-horizontal">
+          {/* Applegreen */}
+          <div
+            className="timeline-card"
+            tabIndex={0}
+            role="button"
+            aria-label="View details for Applegreen IT Graduate"
+            onClick={() =>
+              openModal(
+                <>
+                  <h3 id="modal-title">IT Graduate — Applegreen</h3>
+                  <div className="meta">Sep 2025 – Present · Dublin, Ireland · Hybrid</div>
+                  <p>
+                    <strong>Applegreen · Full-time</strong>
+                  </p>
+                  <p>IT Graduate Programme at Applegreen</p>
+                </>
+              )
+            }
+            onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.click()}
+          >
+            <div className="timeline-logo">
+              <img src="ApplegreenLogo.png" alt="Applegreen" />
+            </div>
+            <h3>IT Graduate</h3>
+            <p>Sep 2025 – Present</p>
+          </div>
+
+          {/* Homeology */}
+          <div
+            className="timeline-card"
+            tabIndex={0}
+            role="button"
+            aria-label="View details for Homeology Retrofit IT Operations & Support Technician"
+            onClick={() =>
+              openModal(
+                <>
+                  <h3 id="modal-title">
+                    IT Operations & Support Technician — Homeology Retrofit
+                  </h3>
+                  <div className="meta">
+                    May 2024 – Sep 2025 · County Meath, Ireland · On-site
+                  </div>
+                  <p>
+                    <strong>Homeology Retrofit · Full-time</strong>
+                  </p>
+                  <ul>
+                    <li>Edit and manage company WordPress website</li>
+                    <li>Procure & deploy hardware tailored to user roles</li>
+                    <li>Manage password systems & access credentials</li>
+                    <li>
+                      Set up & administer domains & company emails (Register365,
+                      Blacknight)
+                    </li>
+                    <li>Troubleshoot & resolve software/hardware issues</li>
+                    <li>Coordinate with vendors and service providers</li>
+                    <li>Maintain IT asset & license inventory</li>
+                    <li>Document IT processes and onboarding guides</li>
+                  </ul>
+                </>
+              )
+            }
+            onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.click()}
+          >
+            <div className="timeline-logo">
+              <img src="HomeologyLogo.png" alt="Homeology Retrofit" />
+            </div>
+            <h3>IT Ops & Support Technician</h3>
+            <p>May 2024 – Sep 2025</p>
+          </div>
+
+          {/* BeSpace */}
+          <div
+            className="timeline-card"
+            tabIndex={0}
+            role="button"
+            aria-label="View details for BeSpace roles"
+            onClick={() =>
+              openModal(
+                <>
+                  <h3 id="modal-title">
+                    BeSpace — Software Engineer Intern & Assembly Operator
+                  </h3>
+                  <div className="meta">
+                    Aug 2022 – Sep 2023 · Blanchardstown, Ireland
+                  </div>
+                  <p>
+                    <strong>Part-time · 1 yr 2 mos</strong>
+                  </p>
+                  <ul>
+                    <li>
+                      Software Engineer Intern (Jun 2023 – Sep 2023): 3D renders in
+                      Cabinet Vision; CNC machine integration
+                    </li>
+                    <li>
+                      Assembly Operator (Aug 2022 – Jun 2023): Drilling machinery,
+                      precision measuring, QA
+                    </li>
+                  </ul>
+                </>
+              )
+            }
+            onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.click()}
+          >
+            <div className="timeline-logo">
+              <img src="BeSpaceLogo.png" alt="BeSpace" />
+            </div>
+            <h3>Software Intern / Operator</h3>
+            <p>Aug 2022 – Sep 2023</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Education Section */}
+      <div className="education">
+        <h2>Education</h2>
+        <h5>Click the card for details</h5>
+        <div className="timeline-horizontal">
+          {/* TU Dublin */}
+          <div
+            className="timeline-card"
+            tabIndex={0}
+            role="button"
+            aria-label="View details for TU Dublin"
+            onClick={() =>
+              openModal(
+                <>
+                  <h3 id="modal-title">
+                    BSc Computer Science — Technological University Dublin
+                  </h3>
+                  <div className="meta">
+                    2020 – 2024 · First Class Honours (GPA 3.3)
+                  </div>
+                  <p>
+                    Key modules: Algorithms, Databases, Operating Systems, Software
+                    Engineering.
+                  </p>
+                </>
+              )
+            }
+            onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.click()}
+          >
+            <div className="timeline-logo">
+              <img src="TUDublinLogo.png" alt="TU Dublin" />
+            </div>
+            <h3>BSc Computer Science</h3>
+            <p>2020 – 2024</p>
+          </div>
+
+          {/* The Open College */}
+          <div
+            className="timeline-card"
+            tabIndex={0}
+            role="button"
+            aria-label="View details for The Open College"
+            onClick={() =>
+              openModal(
+                <>
+                  <h3 id="modal-title">
+                    Level 6 · Personal Training — The Open College
+                  </h3>
+                  <div className="meta">Sep 2021 – Dec 2021</div>
+                  <p>Completed Level 6 certificate in personal training.</p>
+                </>
+              )
+            }
+            onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.click()}
+          >
+            <div className="timeline-logo">
+              <img src="OpenCollegeLogo.jpg" alt="The Open College" />
+            </div>
+            <h3>Level 6 · Personal Training</h3>
+            <p>Sep 2021 – Dec 2021</p>
+          </div>
+        </div>
+      </div>
+
+       {/* Projects Section */}
+       <div className="projects">
         {/* Project 1 */}
         <div className="project">
           <h2>
@@ -94,8 +297,32 @@ function App() {
       </div>
 
       <footer className="App-footer">
-        <h3 style={{ color: 'white' }}>Hello please hire me...lol</h3>
+        <h3 style={{ color: 'white' }}>
+          "Strive not to be a success, but rather to be of value" - Albert Einstein
+        </h3>
       </footer>
+
+      {/* ---- Modal Rendering ---- */}
+      {modalContent && (
+        <div
+          className="modal-overlay"
+          onClick={closeModal}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+        >
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="modal-close"
+              aria-label="Close modal"
+              onClick={closeModal}
+            >
+              &times;
+            </button>
+            <div className="modal-body">{modalContent}</div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
