@@ -47,12 +47,12 @@ function App() {
 
         <p style={{ color: 'white' }}>
           <strong>
-            Contact Details:&nbsp; provadims19@gmail.com, &nbsp;&nbsp;&nbsp;&nbsp; 0897075667
+            Contact Details:&nbsp; provadims19@gmail.com
           </strong>
         </p>
         <h1>Vadim Procik Web CV</h1>
         <p className="bio">
-          <strong>Quick Summary:</strong> I graduated with a first-class honours degree (3.3 GPA) from my Bachelor's in Computer Science at TU Dublin - Blanchardstown in Summer 2024. In the summer of 2022, I worked as a software engineer intern at BeSpace in Blanchardstown where they taught me how to use their software called Cabinet Vision where I would make 3D renders of customers' orders and send cut-out sheets to CNC machines. If anything went wrong with the machines, I and the senior engineer would examine and fix them. Since graduation, I have been reaching out to local small businesses offering to build websites for them to further develop my experience and portfolio.
+          <strong>Quick Summary:</strong> I am an IT Graduate at Applegreen, with prior experience as an IT Operations & Support Technician at Homeology Retrofit. I graduated with a first class honours(3.3GPA) degree in Computer Science from TU Dublin (2024).
         </p>
         <br />
       </header>
@@ -125,7 +125,7 @@ function App() {
             onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.click()}
           >
             <div className="timeline-logo">
-              <img src="HomeologyLogo.png" alt="Homeology Retrofit" />
+              <img src="HomeologyLogo.jpg" alt="Homeology Retrofit" />
             </div>
             <h3>IT Ops & Support Technician</h3>
             <p>May 2024 – Sep 2025</p>
@@ -165,7 +165,7 @@ function App() {
             onKeyDown={(e) => e.key === 'Enter' && e.currentTarget.click()}
           >
             <div className="timeline-logo">
-              <img src="BeSpaceLogo.png" alt="BeSpace" />
+              <img src="BespaceLogo.jpg" alt="BeSpace" />
             </div>
             <h3>Software Intern / Operator</h3>
             <p>Aug 2022 – Sep 2023</p>
