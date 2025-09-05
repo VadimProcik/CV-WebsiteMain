@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CV-WebsiteMain/static/css/main.e92d6864.css",
-    "main.js": "/CV-WebsiteMain/static/js/main.3ffc2e66.js",
+    "main.css": "/CV-WebsiteMain/static/css/main.8ec7e189.css",
+    "main.js": "/CV-WebsiteMain/static/js/main.9770ea28.js",
     "static/js/453.7bb7224c.chunk.js": "/CV-WebsiteMain/static/js/453.7bb7224c.chunk.js",
     "static/media/logo.svg": "/CV-WebsiteMain/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/CV-WebsiteMain/index.html",
-    "main.e92d6864.css.map": "/CV-WebsiteMain/static/css/main.e92d6864.css.map",
-    "main.3ffc2e66.js.map": "/CV-WebsiteMain/static/js/main.3ffc2e66.js.map",
+    "main.8ec7e189.css.map": "/CV-WebsiteMain/static/css/main.8ec7e189.css.map",
+    "main.9770ea28.js.map": "/CV-WebsiteMain/static/js/main.9770ea28.js.map",
     "453.7bb7224c.chunk.js.map": "/CV-WebsiteMain/static/js/453.7bb7224c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e92d6864.css",
-    "static/js/main.3ffc2e66.js"
+    "static/css/main.8ec7e189.css",
+    "static/js/main.9770ea28.js"
   ]
 }
